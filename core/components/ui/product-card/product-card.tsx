@@ -32,6 +32,8 @@ interface Product {
   price?: Price;
   subtitle?: string;
   badge?: string;
+  numberOfReviews?: number;
+  averageRating?: number;
 }
 
 interface Props extends Product {
@@ -54,6 +56,8 @@ const ProductCard = ({
   showCompare = true,
   subtitle,
   name,
+  numberOfReviews,
+  averageRating,
   ...props
 }: Props) => (
   <div className={cn('group relative flex flex-col overflow-visible', className)} {...props}>
@@ -114,6 +118,11 @@ const ProductCard = ({
           ))}
 
         {showCompare && <Compare id={id} image={image} name={name} />}
+      </div>
+      <div className="flex flex-wrap items-end justify-between pt-1">
+        <div>
+          Rating {averageRating}/5 ({numberOfReviews} reviews)
+        </div>
       </div>
     </div>
     {addToCart}

@@ -40,6 +40,8 @@ export const ProductCard = ({
       price={price}
       showCompare={showCompare}
       subtitle={brand?.name}
+      numberOfReviews={product.reviewSummary.numberOfReviews}
+      averageRating={product.reviewSummary.averageRating}
     />
   );
 };
