@@ -26,10 +26,11 @@
         "heading": "Credencial de acesso",
         "Form": {
             "error": "O endereço de email ou a senha está incorreto. Tente fazer login novamente ou redefinir sua senha",
+            "successful": "Você fez login com sucesso.",
             "emailLabel": "Email",
             "enterEmailMessage": "Digite seu email",
             "passwordLabel": "Senha",
-            "entePasswordMessage": "Digite sua senha",
+            "enterPasswordMessage": "Digite sua senha",
             "submitting": "Enviando...",
             "logIn": "Credencial de acesso",
             "forgotPassword": "Esqueceu sua senha?"
@@ -68,7 +69,8 @@
             "submit": "Criar conta",
             "submitting": "Criando conta...",
             "recaptchaText": "Passar na verificação ReCAPTCHA",
-            "confirmPassword": "As senhas não conferem."
+            "confirmPassword": "As senhas não conferem.",
+            "successMessage": "A conta foi criada com sucesso."
         },
         "Errors": {
             "inputError": "Houve um erro no processamento da entrada do usuário.",
@@ -136,18 +138,41 @@
         "searchResults": "Pesquisar resultados por"
     },
     "Account": {
-        "Home": {
-            "title": "Minha conta",
-            "heading": "Minha conta",
+        "Layout": {
             "accountTabsLabel": "Abas da conta",
             "orders": "Pedidos",
-            "messages": "Mensagens",
             "addresses": "Endereços",
             "wishlists": "Lista de desejos",
             "recentlyViewed": "Visto recentemente",
-            "settings": "Configurações da conta",
-            "changePassword": "Alterar senha",
-            "successMessage": "Sua conta foi criada com sucesso"
+            "settings": "Configurações da conta"
+        },
+        "Orders": {
+            "noOrders": "Nenhum pedido ainda",
+            "orderNumber": "Pedido n.º",
+            "placedDate": "Pedido feito",
+            "totalPrice": "Total",
+            "viewDetails": "Ver detalhes",
+            "trackOrder": "Rastrear pedido",
+            "returnOrder": "Devolver itens",
+            "orderSummary": "Resumo do Pedido",
+            "orderContents": "Conteúdos do pedido",
+            "orderSubtotal": "Subtotal:",
+            "orderGrandtotal": "Total geral:",
+            "orderDiscount": "Desconto:",
+            "orderAppliedCoupon": "Código do cupom ({code}):",
+            "orderShipping": "Envio:",
+            "orderTax": "Imposto:",
+            "printInvoice": "Imprimir fatura",
+            "repurchaseOrder": "Recompra",
+            "return": "Devolver",
+            "shippedDate": "Enviado em",
+            "shippingAddress": "Endereço de entrega",
+            "shippingMethod": "Método de envio:",
+            "shipmentTitle": "Envio",
+            "shippingTitle": "Envio",
+            "shippingPayment": "Pagamento",
+            "shippingPaymentMethod": "Forma de pagamento",
+            "billingAddress": "Endereço de cobrança"
         },
         "Addresses": {
             "title": "Endereços",
@@ -161,7 +186,6 @@
                 "title": "Adicionar endereço",
                 "heading": "Novo endereço",
                 "Form": {
-                    "recaptchaText": "Passar na verificação ReCAPTCHA",
                     "submit": "Adicionar novo endereço",
                     "submitting": "Salvando endereço...",
                     "cancel": "Cancelar",
@@ -176,7 +200,6 @@
                 "title": "Editar endereço",
                 "heading": "Editar endereço",
                 "Form": {
-                    "recaptchaText": "Passar na verificação ReCAPTCHA",
                     "submit": "Editar endereço",
                     "submitting": "Atualizando endereço...",
                     "cancel": "Cancelar",
@@ -200,7 +223,6 @@
             "title": "Configurações da conta",
             "emptyTextValidatoinMessage": "Este campo não pode ficar vazio",
             "cancel": "Cancelar",
-            "recaptchaText": "Passar na verificação ReCAPTCHA",
             "changePassword": "Alterar senha",
             "submit": "Atualizar configurações",
             "submitting": "Atualizar configurações...",
@@ -230,6 +252,7 @@
                 "submitText": "Alterar senha"
             },
             "UpdateCustomer": {
+                "successMessage": "As configurações da sua conta foram atualizadas",
                 "Errors": {
                     "inputError": "Houve um erro no processamento da entrada do usuário.",
                     "notFound": "O cliente não existe"
@@ -344,10 +367,10 @@
             "relatedProducts": "Produtos relacionados"
         },
         "Gallery": {
-            "previous": "Previous product image",
-            "next": "Next product image",
-            "thumbnailNavigation": "Thumbnail navigation",
-            "enlarge": "Enlarge product image"
+            "previous": "Imagem do produto anterior",
+            "next": "Próxima imagem do produto",
+            "thumbnailNavigation": "Navegação por miniaturas",
+            "enlarge": "Ampliar imagem do produto"
         },
         "Form": {
             "success": "{cartItems, plural, =1 {1 item} other {# itens}} adicionado(s) <cartLink> ao carrinho</cartLink>",
@@ -375,6 +398,8 @@
             "maxPurchase": "Compra máxima",
             "availability": "Disponibilidade",
             "condition": "Condição",
+            "comingSoon": "Em breve",
+            "qty": "Qde",
             "weight": "Peso",
             "Prices": {
                 "msrp": "MSRP",
@@ -432,7 +457,7 @@
         "Header": {
             "Account": {
                 "account": "Conta",
-                "myAccount": "Minha conta",
+                "orders": "Pedidos",
                 "addresses": "Endereços",
                 "accountSettings": "Configurações da conta",
                 "login": "Acesso",
@@ -447,18 +472,18 @@
                 "items": "Itens do carrinho"
             },
             "Navigation": {
-                "toggle": "Toggle navigation",
-                "navigationMenu": "Navigation menu"
+                "toggle": "Alternar navegação",
+                "navigationMenu": "Menu de navegação"
             },
             "Search": {
-                "openSearchPopup": "Open search popup",
-                "closeSearchPopup": "Close search popup",
-                "searchBar": "Search bar",
+                "openSearchPopup": "Abrir pop-up de pesquisa",
+                "closeSearchPopup": "Fechar pop-up de pesquisa",
+                "searchBar": "Barra de pesquisa",
                 "photo": "Foto",
                 "products": "Produtos",
                 "categories": "Categorias",
                 "brands": "Marcas",
-                "noSearchResults": "Não há resultados para {term}.",
+                "noSearchResults": "Nenhum resultado para “{term}”.",
                 "searchPlaceholder": "Pesquisar...",
                 "clearSearch": "Limpar pesquisa",
                 "processing": "Processando..."
@@ -479,7 +504,7 @@
             "searchProducts": "Pesquisar produtos",
             "searchPlaceholder": "Pesquisar...",
             "search": "Pesquisar",
-            "noSearchResults": "Não há resultados para {term}.",
+            "noSearchResults": "Nenhum resultado para “{term}”.",
             "checkSpelling": "Verifique a ortografia ou tente outra pesquisa."
         },
         "AddToCartButton": {
@@ -499,13 +524,13 @@
             }
         },
         "Slideshow": {
-            "slideshow": "Interactive slide show",
+            "slideshow": "Apresentação de slides interativa",
             "slide": "Slide",
-            "previousSlide": "Previous slide",
-            "nextSlide": "Next slide",
-            "slideNo": "{n} of {total}",
-            "pause": "Pause slideshow",
-            "play": "Play slideshow"
+            "previousSlide": "Slide anterior",
+            "nextSlide": "Próximo slide",
+            "slideNo": "{n} de {total}",
+            "pause": "Pausar apresentação de slides",
+            "play": "Reproduzir apresentação de slides"
         },
         "Pagination": {
             "pagination": "paginação",
@@ -514,10 +539,10 @@
         },
         "Carousel": {
             "carousel": "Carrossel",
-            "previousProducts": "Previous products",
-            "nextProducts": "Next products",
+            "previousProducts": "Produtos anteriores",
+            "nextProducts": "Próximos produtos",
             "slides": "Slides",
-            "goto": "Go to slide {n}"
+            "goto": "Ir para o slide {n}"
         },
         "FormFields": {
             "Validation": {

@@ -26,10 +26,11 @@
         "heading": "Log på",
         "Form": {
             "error": "Din e-mailadresse eller adgangskode er forkert. Prøv at logge ind igen, eller nulstil din adgangskode",
+            "successful": "Du har logget ind.",
             "emailLabel": "E-mail",
             "enterEmailMessage": "Indtast din e-mailadresse",
             "passwordLabel": "Adgangskode",
-            "entePasswordMessage": "Indtast din adgangskode.",
+            "enterPasswordMessage": "Indtast din adgangskode.",
             "submitting": "Indsender ...",
             "logIn": "Log ind",
             "forgotPassword": "Har du glemt din adgangskode?"
@@ -68,7 +69,8 @@
             "submit": "Opret konto",
             "submitting": "Opretter konto ...",
             "recaptchaText": "Bestå ReCAPTCHA-kontrol",
-            "confirmPassword": "Adgangskoderne stemmer ikke overens"
+            "confirmPassword": "Adgangskoderne stemmer ikke overens",
+            "successMessage": "Kontoen blev oprettet."
         },
         "Errors": {
             "inputError": "Noget gik galt med behandling af brugerinput.",
@@ -136,18 +138,41 @@
         "searchResults": "Søgeresultater for"
     },
     "Account": {
-        "Home": {
-            "title": "Min konto",
-            "heading": "Min konto",
+        "Layout": {
             "accountTabsLabel": "Konto-faner",
             "orders": "Ordrer",
-            "messages": "Meddelelser",
             "addresses": "Adresser",
             "wishlists": "Ønskelister",
             "recentlyViewed": "Set for nylig",
-            "settings": "Kontoindstillinger",
-            "changePassword": "Skift adgangskode",
-            "successMessage": "Din konto er blevet oprettet"
+            "settings": "Kontoindstillinger"
+        },
+        "Orders": {
+            "noOrders": "Ingen ordrer endnu",
+            "orderNumber": "Ordrenr.",
+            "placedDate": "Ordre afgivet",
+            "totalPrice": "I alt",
+            "viewDetails": "Se detaljer",
+            "trackOrder": "Spor ordre",
+            "returnOrder": "Returner varer",
+            "orderSummary": "Ordreoversigt",
+            "orderContents": "Ordreindhold",
+            "orderSubtotal": "Subtotal:",
+            "orderGrandtotal": "Samlet beløb:",
+            "orderDiscount": "Rabat:",
+            "orderAppliedCoupon": "Kuponkode ({code}):",
+            "orderShipping": "Forsendelse:",
+            "orderTax": "Skat:",
+            "printInvoice": "Udskriv faktura",
+            "repurchaseOrder": "Køb igen",
+            "return": "Returnér",
+            "shippedDate": "Sendes på",
+            "shippingAddress": "Leveringsadresse",
+            "shippingMethod": "Forsendelsesmetode",
+            "shipmentTitle": "Forsendelse",
+            "shippingTitle": "Forsendelse",
+            "shippingPayment": "Betaling",
+            "shippingPaymentMethod": "Betalingsmetode",
+            "billingAddress": "Faktureringsadresse"
         },
         "Addresses": {
             "title": "Adresser",
@@ -161,7 +186,6 @@
                 "title": "Tilføj adresse",
                 "heading": "Ny adresse",
                 "Form": {
-                    "recaptchaText": "Bestå ReCAPTCHA-kontrol",
                     "submit": "Tilføj ny adresse",
                     "submitting": "Gemmer adresse ...",
                     "cancel": "Annuller",
@@ -176,7 +200,6 @@
                 "title": "Rediger adresse",
                 "heading": "Rediger adresse",
                 "Form": {
-                    "recaptchaText": "Bestå ReCAPTCHA-kontrol",
                     "submit": "Rediger adresse",
                     "submitting": "Opdaterer adresse ...",
                     "cancel": "Annuller",
@@ -200,7 +223,6 @@
             "title": "Kontoindstillinger",
             "emptyTextValidatoinMessage": "Dette felt må ikke være tomt",
             "cancel": "Annuller",
-            "recaptchaText": "Bestå ReCAPTCHA-kontrol",
             "changePassword": "Skift adgangskode",
             "submit": "Opdater indstillinger",
             "submitting": "Opdater indstillinger ...",
@@ -230,6 +252,7 @@
                 "submitText": "Skift adgangskode"
             },
             "UpdateCustomer": {
+                "successMessage": "Dine kontoindstillinger er blevet opdateret",
                 "Errors": {
                     "inputError": "Noget gik galt med behandling af brugerinput.",
                     "notFound": "Kunden findes ikke."
@@ -344,10 +367,10 @@
             "relatedProducts": "Relaterede produkter"
         },
         "Gallery": {
-            "previous": "Previous product image",
-            "next": "Next product image",
-            "thumbnailNavigation": "Thumbnail navigation",
-            "enlarge": "Enlarge product image"
+            "previous": "Forrige produktbillede",
+            "next": "Næste produktbillede",
+            "thumbnailNavigation": "Navigation med miniaturebilleder",
+            "enlarge": "Forstør produktbilledet"
         },
         "Form": {
             "success": "<cartLink>{cartItems, plural, =1 {1 varer} other {# varer}} tilføjet til din indkøbskurv</cartLink>",
@@ -375,6 +398,8 @@
             "maxPurchase": "Maksimumkøb",
             "availability": "Tilgængelighed",
             "condition": "Tilstand",
+            "comingSoon": "Kommer snart",
+            "qty": "Antal",
             "weight": "Vægt",
             "Prices": {
                 "msrp": "Producents anbefalede detailpris",
@@ -432,7 +457,7 @@
         "Header": {
             "Account": {
                 "account": "Konto",
-                "myAccount": "Min konto",
+                "orders": "Ordrer",
                 "addresses": "Adresser",
                 "accountSettings": "Kontoindstillinger",
                 "login": "Log på",
@@ -447,18 +472,18 @@
                 "items": "Varer i indkøbskurven"
             },
             "Navigation": {
-                "toggle": "Toggle navigation",
-                "navigationMenu": "Navigation menu"
+                "toggle": "Skift navigation",
+                "navigationMenu": "Navigationsmenu"
             },
             "Search": {
-                "openSearchPopup": "Open search popup",
-                "closeSearchPopup": "Close search popup",
-                "searchBar": "Search bar",
+                "openSearchPopup": "Åbn søge-pop op",
+                "closeSearchPopup": "Luk søge-pop op",
+                "searchBar": "Søgelinje",
                 "photo": "Foto",
                 "products": "produkter",
                 "categories": "Kategorier",
                 "brands": "mærker",
-                "noSearchResults": "Beklager, ingen resultater for {term}.",
+                "noSearchResults": "Beklager, der var ingen resultater for “{term}”.",
                 "searchPlaceholder": "Søg ...",
                 "clearSearch": "Ryd søgning",
                 "processing": "Behandler..."
@@ -468,7 +493,7 @@
             "socialMediaLinks": "Links til sociale medier"
         },
         "Breadcrumb": {
-            "breadcrumb": "Breadcrumb"
+            "breadcrumb": "Brødkrumme"
         },
         "Compare": {
             "compareButton": "Sammenlign ({products})",
@@ -479,7 +504,7 @@
             "searchProducts": "Søg efter produkter",
             "searchPlaceholder": "Søg ...",
             "search": "Søg",
-            "noSearchResults": "Beklager, ingen resultater for {term}.",
+            "noSearchResults": "Beklager, der var ingen resultater for “{term}”.",
             "checkSpelling": "Kontrollér stavningen, eller prøv en anden søgning."
         },
         "AddToCartButton": {
@@ -499,13 +524,13 @@
             }
         },
         "Slideshow": {
-            "slideshow": "Interactive slide show",
+            "slideshow": "Interaktivt slideshow",
             "slide": "Dias",
-            "previousSlide": "Previous slide",
-            "nextSlide": "Next slide",
-            "slideNo": "{n} of {total}",
-            "pause": "Pause slideshow",
-            "play": "Play slideshow"
+            "previousSlide": "Forrige slide",
+            "nextSlide": "Næste slide",
+            "slideNo": "{n} af {total}",
+            "pause": "Sæt slideshowet på pause",
+            "play": "Afspil slideshow"
         },
         "Pagination": {
             "pagination": "sideopsætning",
@@ -514,10 +539,10 @@
         },
         "Carousel": {
             "carousel": "Karrusel",
-            "previousProducts": "Previous products",
-            "nextProducts": "Next products",
+            "previousProducts": "Forrige produkter",
+            "nextProducts": "Næste produkter",
             "slides": "Slides",
-            "goto": "Go to slide {n}"
+            "goto": "Gå til slide {n}"
         },
         "FormFields": {
             "Validation": {

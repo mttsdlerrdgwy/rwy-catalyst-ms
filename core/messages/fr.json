@@ -26,10 +26,11 @@
         "heading": "Connexion",
         "Form": {
             "error": "Votre adresse e-mail ou votre mot de passe est incorrect. Essayez de vous reconnecter ou réinitialisez votre mot de passe",
+            "successful": "Vous êtes connecté(e).",
             "emailLabel": "E-mail",
             "enterEmailMessage": "Saisissez votre adresse e-mail",
             "passwordLabel": "Mot de passe",
-            "entePasswordMessage": "Veuillez saisir votre mot de passe.",
+            "enterPasswordMessage": "Veuillez saisir votre mot de passe.",
             "submitting": "Envoi...",
             "logIn": "Connexion",
             "forgotPassword": "Mot de passe oublié ?"
@@ -68,7 +69,8 @@
             "submit": "Créer un compte",
             "submitting": "Création du compte...",
             "recaptchaText": "Réussir le test ReCAPTCHA",
-            "confirmPassword": "Les mots de passe ne correspondent pas"
+            "confirmPassword": "Les mots de passe ne correspondent pas",
+            "successMessage": "Le compte a été créé."
         },
         "Errors": {
             "inputError": "Un problème est survenu lors du traitement des saisies de l'utilisateur.",
@@ -136,18 +138,41 @@
         "searchResults": "Résultats de recherche pour"
     },
     "Account": {
-        "Home": {
-            "title": "Mon compte",
-            "heading": "Mon compte",
+        "Layout": {
             "accountTabsLabel": "Onglets Compte",
             "orders": "Commandes",
-            "messages": "Messages",
             "addresses": "Adresses",
             "wishlists": "Listes d'envies",
             "recentlyViewed": "Consultés récemment",
-            "settings": "Paramètres des comptes",
-            "changePassword": "Modifier le mot de passe",
-            "successMessage": "Votre compte a été créé avec succès"
+            "settings": "Paramètres des comptes"
+        },
+        "Orders": {
+            "noOrders": "Aucune commande pour l'instant",
+            "orderNumber": "Commande n° ",
+            "placedDate": "Commande passée",
+            "totalPrice": "Total",
+            "viewDetails": "Afficher les détails",
+            "trackOrder": "Suivre la commande",
+            "returnOrder": "Retourner des articles",
+            "orderSummary": "Récapitulatif de la commande",
+            "orderContents": "Contenu de la commande",
+            "orderSubtotal": "Sous-total :",
+            "orderGrandtotal": "Total :",
+            "orderDiscount": "Remise :",
+            "orderAppliedCoupon": "Code promotionnel ({code}) :",
+            "orderShipping": "Expédition :",
+            "orderTax": "Taxes :",
+            "printInvoice": "Imprimer la facture",
+            "repurchaseOrder": "Racheter",
+            "return": "Retour",
+            "shippedDate": "Expédié le",
+            "shippingAddress": "Adresse de livraison",
+            "shippingMethod": "Mode de livraison",
+            "shipmentTitle": "Expédition",
+            "shippingTitle": "Livraison",
+            "shippingPayment": "Paiement",
+            "shippingPaymentMethod": "Mode de paiement",
+            "billingAddress": "Adresse de facturation"
         },
         "Addresses": {
             "title": "Adresses",
@@ -161,7 +186,6 @@
                 "title": "Ajouter une adresse",
                 "heading": "Nouvelle adresse",
                 "Form": {
-                    "recaptchaText": "Réussir le test ReCAPTCHA",
                     "submit": "Ajouter une nouvelle adresse",
                     "submitting": "Enregistrer l'adresse...",
                     "cancel": "Annuler",
@@ -176,7 +200,6 @@
                 "title": "Modifier l'adresse",
                 "heading": "Modifier l'adresse",
                 "Form": {
-                    "recaptchaText": "Réussir le test ReCAPTCHA",
                     "submit": "Modifier l'adresse",
                     "submitting": "Mise à jour de l'adresse...",
                     "cancel": "Annuler",
@@ -200,7 +223,6 @@
             "title": "Paramètres des comptes",
             "emptyTextValidatoinMessage": "Ce champ ne peut pas être vide",
             "cancel": "Annuler",
-            "recaptchaText": "Réussir le test ReCAPTCHA",
             "changePassword": "Modifier le mot de passe",
             "submit": "MODIFIER LES PARAMÈTRES",
             "submitting": "MODIFIER LES PARAMÈTRES...",
@@ -230,6 +252,7 @@
                 "submitText": "Modifier le mot de passe"
             },
             "UpdateCustomer": {
+                "successMessage": "Les paramètres de votre compte ont été mis à jour",
                 "Errors": {
                     "inputError": "Un problème est survenu lors du traitement des saisies de l'utilisateur.",
                     "notFound": "Le client n'existe pas"
@@ -344,10 +367,10 @@
             "relatedProducts": "Produits associés"
         },
         "Gallery": {
-            "previous": "Previous product image",
-            "next": "Next product image",
-            "thumbnailNavigation": "Thumbnail navigation",
-            "enlarge": "Enlarge product image"
+            "previous": "Image du produit précédent",
+            "next": "Image du produit suivant",
+            "thumbnailNavigation": "Navigation par vignettes",
+            "enlarge": "Agrandir l'image du produit"
         },
         "Form": {
             "success": "<cartLink>{cartItems, plural, =1 {1 article} other {# articles}} ajouté(s) à votre panier</cartLink>",
@@ -375,6 +398,8 @@
             "maxPurchase": "Quantité maximale d'achat",
             "availability": "Disponibilité",
             "condition": "Condition",
+            "comingSoon": "Prochainement disponible·s",
+            "qty": "Qté",
             "weight": "Poids",
             "Prices": {
                 "msrp": "PDSF",
@@ -432,7 +457,7 @@
         "Header": {
             "Account": {
                 "account": "Compte",
-                "myAccount": "Mon compte",
+                "orders": "Commandes",
                 "addresses": "Adresses",
                 "accountSettings": "Paramètres des comptes",
                 "login": "Connexion",
@@ -447,18 +472,18 @@
                 "items": "Articles du panier"
             },
             "Navigation": {
-                "toggle": "Toggle navigation",
-                "navigationMenu": "Navigation menu"
+                "toggle": "Basculer la navigation",
+                "navigationMenu": "Menu de navigation"
             },
             "Search": {
-                "openSearchPopup": "Open search popup",
-                "closeSearchPopup": "Close search popup",
-                "searchBar": "Search bar",
+                "openSearchPopup": "Ouvrir la fenêtre contextuelle de recherche",
+                "closeSearchPopup": "Fermer la fenêtre contextuelle de recherche",
+                "searchBar": "Barre de recherche",
                 "photo": "Photo",
                 "products": "Produits",
                 "categories": "Catégories",
                 "brands": "Marques",
-                "noSearchResults": "Désolé, il n'y a aucun résultat pour « {term} ».",
+                "noSearchResults": "Désolé, aucun résultat pour « {term} ».",
                 "searchPlaceholder": "Recherche...",
                 "clearSearch": "Effacer la recherche",
                 "processing": "Traitement en cours…"
@@ -468,7 +493,7 @@
             "socialMediaLinks": "Lien vers les médias sociaux"
         },
         "Breadcrumb": {
-            "breadcrumb": "Breadcrumb"
+            "breadcrumb": "Fil d'Ariane"
         },
         "Compare": {
             "compareButton": "Comparer ({products})",
@@ -479,7 +504,7 @@
             "searchProducts": "Rechercher des produits",
             "searchPlaceholder": "Recherche...",
             "search": "Rechercher",
-            "noSearchResults": "Désolé, il n'y a aucun résultat pour « {term} ».",
+            "noSearchResults": "Désolé, aucun résultat pour « {term} ».",
             "checkSpelling": "Veuillez vérifier l’orthographe ou modifier votre recherche."
         },
         "AddToCartButton": {
@@ -499,13 +524,13 @@
             }
         },
         "Slideshow": {
-            "slideshow": "Interactive slide show",
+            "slideshow": "Diaporama interactif",
             "slide": "Diapositive",
-            "previousSlide": "Previous slide",
-            "nextSlide": "Next slide",
-            "slideNo": "{n} of {total}",
-            "pause": "Pause slideshow",
-            "play": "Play slideshow"
+            "previousSlide": "Diapositive précédente",
+            "nextSlide": "Diapositive suivante",
+            "slideNo": "{n} sur {total}",
+            "pause": "Mettre le diaporama en pause",
+            "play": "Lancer le diaporama"
         },
         "Pagination": {
             "pagination": "pagination",
@@ -514,10 +539,10 @@
         },
         "Carousel": {
             "carousel": "Carrousel",
-            "previousProducts": "Previous products",
-            "nextProducts": "Next products",
-            "slides": "Slides",
-            "goto": "Go to slide {n}"
+            "previousProducts": "Produits précédents",
+            "nextProducts": "Prochains produits",
+            "slides": "Diapositives",
+            "goto": "Aller à la diapositive {n}"
         },
         "FormFields": {
             "Validation": {
