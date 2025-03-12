@@ -1,10 +1,11 @@
 import { useFormatter } from 'next-intl';
 
 import { ResultOf } from '~/client/graphql';
-import { ProductCard as ComponentProductCard } from '~/components/ui/product-card';
+import { ProductCard as ComponentProductCard } from '~/components/ui/product-card/product-card';
 import { pricesTransformer } from '~/data-transformers/prices-transformer';
 
-import { AddToCart } from './add-to-cart';
+import { AddToCart } from '../../app/[locale]/(default)/compare/_components/add-to-cart';
+
 import { ProductCardFragment } from './fragment';
 
 interface Props {
@@ -30,18 +31,38 @@ export const ProductCard = ({
 
   return (
     <ComponentProductCard
-      addToCart={showCart && <AddToCart data={product} />}
-      href={path}
+      addToCart={
+        showCart && (
+          <AddToCart
+            data={{
+              ...product,
+              inventory: product.inventory,
+              availabilityV2: product.availabilityV2,
+            }}
+          />
+        )
+      }
+      addToCart={
+        showCart && (
+          <AddToCart
+            data={{
+              ...product,
+              inventory: product.inventory,
+              availabilityV2: product.availabilityV2,
+            }}
+          />
+        )
+      }
+      averageRating={product.reviewSummary.averageRating}
       id={entityId.toString()}
       image={defaultImage ? { src: defaultImage.url, altText: defaultImage.altText } : undefined}
       imagePriority={imagePriority}
       imageSize={imageSize}
       name={name}
+      numberOfReviews={product.reviewSummary.numberOfReviews}
       price={price}
       showCompare={showCompare}
       subtitle={brand?.name}
-      numberOfReviews={product.reviewSummary.numberOfReviews}
-      averageRating={product.reviewSummary.averageRating}
     />
   );
 };
